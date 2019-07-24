@@ -1,0 +1,53 @@
+// 웹폰트 로딩
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding|Ubuntu&display=swap');
+
+// 웹폰트 적용
+@mixin font-ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+}
+@mixin font-nanumgothic-coding {
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+.font-ubuntu {
+  @include font-ubuntu();
+}
+.font-nanumgothic-coding {
+  @include font-nanumgothic-coding();
+}
+
+///////////////
+// Variables //
+///////////////
+// Color
+$color-primary: #000;
+$color-secondary: #000;
+$color-bg: #1A1A1A;
+$color-point-1: #000;
+$color-point-2: #000;
+$color-point-3: #000;
+
+// Default documnet style
+html,
+body {
+  @include font-nanumgothic-coding();
+  background-color: $color-bg;
+  color: #fff;
+}
+
+
+///////////////
+// index.vue //
+///////////////
+#index {
+  .section-1 {
+    .introduction {
+      margin-top: 50px;
+      left: 25%;
+      font-weight: 800;
+    }
+
+    .description {
+
+    }
+  }
+}
