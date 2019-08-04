@@ -43,14 +43,6 @@ export default {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-    },
-    postcss: {
-      preset: {
-        // Change the postcss-preset-env settings
-        autoprefixer: {
-          grid: true
-        }
-      }
     }
   }
 }

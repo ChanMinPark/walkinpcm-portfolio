@@ -1,15 +1,9 @@
 // 웹폰트 로딩
-@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding|Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap');
 
 // 웹폰트 적용
-@mixin font-ubuntu {
-  font-family: 'Ubuntu', sans-serif;
-}
 @mixin font-nanumgothic-coding {
   font-family: 'Nanum Gothic Coding', monospace;
-}
-.font-ubuntu {
-  @include font-ubuntu();
 }
 .font-nanumgothic-coding {
   @include font-nanumgothic-coding();
@@ -39,9 +33,15 @@ body {
 // index.vue //
 ///////////////
 #index {
+  .nav-logo {
+    position: fixed;
+    top: 20px;
+    left: 15px;
+  }
+
   .section-1 {
     .introduction {
-      margin-top: 50px;
+      margin-top: 100px;
       left: 25%;
       font-weight: 800;
     }
