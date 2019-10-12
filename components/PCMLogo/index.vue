@@ -2,7 +2,8 @@
   <div
     :class="[
       'walkinpcm-logo',
-      { 'logo-bg-dark': isBgDark }
+      'font-ubuntu',
+      { 'logo-bg-dark': flag.isBgDark }
     ]"
   >
     <span class="logo-www">WWW</span><span class="logo-alkinpcm">ALKINPCM</span>
@@ -37,23 +38,36 @@ export default {
 
   .walkinpcm-logo {
     display: inline-block;
-    border: 1px solid $logo-color-white;
+    // border: 1px solid $logo-color-white;
 
     .logo-www {
       display: inline-block;
-      background-color: $logo-color-white;
-      color: $logo-color-black;
-      padding: 0 1px 0 2px;
+      background-color: $logo-color-black;
+      border: 1px solid $logo-color-black;
+      border-right: 0 !important;
+      color: $logo-color-white;
+      padding: 0 0 0 2px;
     }
     .logo-alkinpcm {
       display: inline-block;
-      background-color: $logo-color-black;
-      color: $logo-color-white;
-      padding: 0 3px 0 2px;
+      background-color: $logo-color-white;
+      border: 1px solid $logo-color-black;
+      border-left: 0px;
+      color: $logo-color-black;
+      padding: 0 3px 0 1px;
     }
 
     &.logo-bg-dark {
-
+      .logo-www {
+        background-color: $logo-color-white;
+        border: 1px solid $logo-color-white;
+        color: $logo-color-black;
+      }
+      .logo-alkinpcm {
+        background-color: $logo-color-black;
+        border: 1px solid $logo-color-white;
+        color: $logo-color-white;
+      }
     }
   }
 </style>
