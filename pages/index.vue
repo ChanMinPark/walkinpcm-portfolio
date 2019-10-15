@@ -7,6 +7,10 @@
         <div>
           <PCMLogo />
         </div>
+        <br>
+        <div>
+          <PCMLogo :isMin="true" />
+        </div>
       </section>
       
       <section class="section-1">

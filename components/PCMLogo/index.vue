@@ -3,7 +3,8 @@
     :class="[
       'walkinpcm-logo',
       'font-ubuntu',
-      { 'logo-bg-dark': flag.isBgDark }
+      { 'logo-bg-dark': flag.isBgDark },
+      { 'logo-size-min': isMin }
     ]"
   >
     <span class="logo-www">WWW</span><span class="logo-alkinpcm">ALKINPCM</span>
@@ -12,10 +13,15 @@
 
 <script>
 export default {
+  props: {
+    isMin: {
+      type: Boolean,
+      default: false
+    }
+  },
   data () {
     return {
       flag: {
-        isMin: false,
         isBgDark: true
       }
     }
@@ -40,11 +46,27 @@ export default {
     display: inline-block;
     // border: 1px solid $logo-color-white;
 
+    &.logo-size-min {
+      .logo-www {
+        padding-right: 2px !important;
+        border-right-width: 1px !important;
+      }
+
+      .logo-alkinpcm {
+        width: 0;
+        padding-left: 0;
+        padding-right: 0;
+        overflow: hidden;
+        border-left: 0 !important;
+        border-right-width: 0 !important;
+      }
+    }
+
     .logo-www {
       display: inline-block;
       background-color: $logo-color-black;
       border: 1px solid $logo-color-black;
-      border-right: 0 !important;
+      border-right-width: 0;
       color: $logo-color-white;
       padding: 0 0 0 2px;
     }
@@ -61,6 +83,7 @@ export default {
       .logo-www {
         background-color: $logo-color-white;
         border: 1px solid $logo-color-white;
+        border-right-width: 0;
         color: $logo-color-black;
       }
       .logo-alkinpcm {
