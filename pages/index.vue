@@ -5,11 +5,7 @@
       <!-- 임시: 로고 -->
       <section class="nav-logo">
         <div>
-          <PCMLogo />
-        </div>
-        <br>
-        <div>
-          <PCMLogo :isMin="true" />
+          <PCMLogo :isMin="flag.logoMin" />
         </div>
       </section>
       
@@ -36,6 +32,13 @@
   export default {
     components: {
       PCMLogo
+    },
+    data () {
+      return {
+        flag: {
+          logoMin: false
+        }
+      }
     }
   }
 </script>

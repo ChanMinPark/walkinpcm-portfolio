@@ -2,12 +2,18 @@
   <div
     :class="[
       'walkinpcm-logo',
-      'font-ubuntu',
       { 'logo-bg-dark': flag.isBgDark },
       { 'logo-size-min': isMin }
     ]"
   >
-    <span class="logo-www">WWW</span><span class="logo-alkinpcm">ALKINPCM</span>
+    <div class="logo-full" :class="[`logo-${size}`]">
+      <img v-if="flag.isBgDark" src="~assets/img/logo/bg-black-full.jpg" alt="Logo of walkinpcm">
+      <img v-else src="~assets/img/logo/bg-white-full.jpg" alt="Logo of walkinpcm">
+    </div>
+    <div class="logo-min" :class="[`logo-${size}`]">
+      <img v-if="flag.isBgDark" src="~assets/img/logo/bg-black-min.jpg" alt="Logo of walkinpcm">
+      <img v-else src="~assets/img/logo/bg-white-min.jpg" alt="Logo of walkinpcm">
+    </div>
   </div>
 </template>
 
@@ -17,6 +23,10 @@ export default {
     isMin: {
       type: Boolean,
       default: false
+    },
+    size: {
+      type: String,
+      default: 'sm'
     }
   },
   data () {
@@ -30,67 +40,54 @@ export default {
 </script>
 
 <style lang="scss">
-  // 폰트: Ubuntu ( https://fonts.googleapis.com/css?family=Ubuntu&display=swap )
-  @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
-  @mixin font-ubuntu {
-    font-family: 'Ubuntu', sans-serif;
-  }
-  .font-ubuntu {
-    @include font-ubuntu();
-  }
-
-  $logo-color-black: #000;
-  $logo-color-white: #fff;
-
   .walkinpcm-logo {
     display: inline-block;
-    // border: 1px solid $logo-color-white;
+    position: relative;
 
+    .logo-full,
+    .logo-min {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 50px;
+
+      &.logo-sm {
+        height: 30px;
+      }
+      &.logo-md {
+        height: 50px;
+      }
+      &.logo-lg {
+        height: 70px;
+      }
+      &.logo-xl {
+        height: 90px;
+      }
+
+      > img {
+        width: auto;
+        height: 100%;
+      }
+    }
+
+    .logo-full {
+      opacity: 1;
+      transition: opacity .2s ease;
+    }
+    .logo-min {
+      opacity: 0;
+      transition: opacity .2s ease;
+    }
     &.logo-size-min {
-      .logo-www {
-        padding-right: 2px !important;
-        border-right-width: 1px !important;
+      .logo-full {
+        opacity: 0;
       }
-
-      .logo-alkinpcm {
-        width: 0;
-        padding-left: 0;
-        padding-right: 0;
-        overflow: hidden;
-        border-left: 0 !important;
-        border-right-width: 0 !important;
+      .logo-min {
+        opacity: 1;
       }
-    }
-
-    .logo-www {
-      display: inline-block;
-      background-color: $logo-color-black;
-      border: 1px solid $logo-color-black;
-      border-right-width: 0;
-      color: $logo-color-white;
-      padding: 0 0 0 2px;
-    }
-    .logo-alkinpcm {
-      display: inline-block;
-      background-color: $logo-color-white;
-      border: 1px solid $logo-color-black;
-      border-left: 0px;
-      color: $logo-color-black;
-      padding: 0 3px 0 1px;
     }
 
     &.logo-bg-dark {
-      .logo-www {
-        background-color: $logo-color-white;
-        border: 1px solid $logo-color-white;
-        border-right-width: 0;
-        color: $logo-color-black;
-      }
-      .logo-alkinpcm {
-        background-color: $logo-color-black;
-        border: 1px solid $logo-color-white;
-        color: $logo-color-white;
-      }
     }
   }
 </style>
