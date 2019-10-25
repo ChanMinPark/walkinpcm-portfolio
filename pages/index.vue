@@ -10,16 +10,25 @@
       </section>
       
       <section class="section-1">
-        <h1 class="introduction">
-          Hello :)<br>
-          I am<br>
-          ChanMin Park.
-        </h1>
+        <div class="content">
+          <h1 class="introduction">
+            Hello :)<br>
+            I am<br>
+            ChanMin Park.
+          </h1>
 
-        <h2 class="description">
-          Front-end Developer<br>
-          based in South Korea.
-        </h2>
+          <h2 class="description">
+            Front-end Developer<br>
+            based in South Korea.
+          </h2>
+        </div>
+
+        <div class="roundsquare-wrapper-1">
+          <TheRoundSquare size="md" />
+        </div>
+        <div class="roundsquare-wrapper-2">
+          <TheRoundSquare size="lg" />
+        </div>
       </section>
 
     </div>
@@ -28,10 +37,12 @@
 
 <script>
   import PCMLogo from '~/components/PCMLogo'
+  import TheRoundSquare from '~/components/TheRoundSquare'
 
   export default {
     components: {
-      PCMLogo
+      PCMLogo,
+      TheRoundSquare
     },
     data () {
       return {

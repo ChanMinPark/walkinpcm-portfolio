@@ -40,17 +40,38 @@ body {
   }
 
   .section-1 {
-    .introduction {
-      margin-top: 100px;
-      left: 25%;
-      font-weight: 800;
-      font-size: 50px;
+    position: relative;
+
+    .content {
+      position: relative;
+      z-index: 1;
+      
+      .introduction {
+        margin-top: 100px;
+        left: 25%;
+        font-weight: 800;
+        font-size: 50px;
+      }
+  
+      .description {
+        left: 25%;
+        font-weight: 400;
+        font-size: 24px;
+      }
     }
 
-    .description {
-      left: 25%;
-      font-weight: 400;
-      font-size: 24px;
+
+    .roundsquare-wrapper-1 {
+      position: absolute;
+      top: 20%;
+      left: 60%;
+      z-index: 0;
+    }
+    .roundsquare-wrapper-2 {
+      position: absolute;
+      top: 80%;
+      left: 30%;
+      z-index: 0;
     }
   }
 }
