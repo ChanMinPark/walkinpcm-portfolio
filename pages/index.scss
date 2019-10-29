@@ -13,12 +13,12 @@
 // Variables //
 ///////////////
 // Color
-$color-primary: #000;
-$color-secondary: #000;
+$color-primary: #e5eec1;
+$color-secondary: #3eaca8;
 $color-bg: #1A1A1A;
-$color-point-1: #000;
-$color-point-2: #000;
-$color-point-3: #000;
+$color-point-1: #547a82;
+$color-point-2: #a2d4ab;
+$color-point-3: #daf7a6;
 
 // Default documnet style
 html,
@@ -40,6 +40,7 @@ body {
   }
 
   .section-1 {
+    padding: 150px 0;
     position: relative;
 
     .content {
@@ -47,14 +48,36 @@ body {
       z-index: 1;
       
       .introduction {
-        margin-top: 100px;
-        left: 25%;
         font-weight: 800;
         font-size: 50px;
+
+        .intro-hello {
+          font-size: 70px;
+
+          .smile {
+            color: $color-point-3;
+          }
+        }
+
+        .intro-name {
+          position: relative;
+
+          &::before {
+            display: block;
+            content: "";
+            position: absolute;
+            top: 25px;
+            left: 0;
+            width: 100%;
+            height: 35px;
+            background-color: $color-primary;
+            opacity: .4;
+          }
+        }
       }
   
       .description {
-        left: 25%;
+        margin-top: 50px;
         font-weight: 400;
         font-size: 24px;
       }
@@ -69,7 +92,7 @@ body {
     }
     .roundsquare-wrapper-2 {
       position: absolute;
-      top: 80%;
+      top: 60%;
       left: 30%;
       z-index: 0;
     }
