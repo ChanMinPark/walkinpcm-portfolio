@@ -77,6 +77,25 @@
     </section>
 
     <!-- 발표 소개 섹션 -->
+    <section class="section-box section-4">
+      <div class="container">
+        <h1 class="section-title">Community</h1>
+        <p>
+          개발자들의 공유의 문화를 정말 좋아합니다.<br>
+          오랜 세월 동안, 많은 개발자들이 서로가 배운 것을 나누고 함께 성장하는 문화가 자리 잡힌 것 같습니다.<br>
+          덕분에 저는 많은 개발 커뮤니티에 참석하면서 많은 지식들을 배울 수 있었습니다.
+        </p>
+        <p>
+          <!-- TODO: span의 before로 스타일 준 것의 버그 픽스 해야함.(줄이 넘어갈 때의 이슈) -->
+          정기적으로 참석하는 커뮤니티로는 <span class="text-highlight text-awskrug"><a href="https://www.facebook.com/groups/awskrug" target="_blank">AWSKRUG Serverless 소모임</a></span>이 있습니다. 소모임에서는 서로의 실무 경험이나 학습 내용을 공유하는 자리를 달마다 가지고 있습니다.<br>
+          이런 자리는 스스로를 자극시키는 좋은 원동력이 됩니다.
+        </p>
+        <p>
+          저 또한, 다른 사람들에게 좋은 자극이 되었으면 하는 마음에 몇번의 좋은 기회를 얻어서 지식을 공유하는 자리를 가졌습니다.
+        </p>
+      </div>
+    </section>
+
     <!-- 포트폴리오 섹션 (간략 소개 & 전용 페이지로 이동) -->
     <!-- Contact 섹션 (이메일) -->
   </div>

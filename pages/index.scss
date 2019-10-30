@@ -161,6 +161,8 @@ body {
           }
 
           > a {
+            text-decoration: none;
+
             > img {
               width: 100%;
               height: auto;
@@ -168,6 +170,16 @@ body {
           }
           
         }
+      }
+    }
+  }
+
+  .section-4 {
+    .text-awskrug {
+      > a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
       }
     }
   }
