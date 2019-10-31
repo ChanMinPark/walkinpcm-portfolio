@@ -91,13 +91,34 @@
           이런 자리는 스스로를 자극시키는 좋은 원동력이 됩니다.
         </p>
         <p>
-          저 또한, 다른 사람들에게 좋은 자극이 되었으면 하는 마음에 몇번의 좋은 기회를 얻어서 지식을 공유하는 자리를 가졌습니다.
+          저 또한, 다른 사람들에게 좋은 자극이 되었으면 하는 마음에 몇번의 좋은 기회를 얻어서 지식을 공유하는 자리를 가졌습니다. 앞으로도 이런 자리를 더 가지고 싶은 바람입니다.
         </p>
+
+        <div v-swiper:ptSwiper="swiperOption">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide presentation-box" v-for="(item, index) in presentations" :key="index">
+              <div class="pb__title"><span class="text-highlight">{{ item.title }}</span></div>
+              <div class="pb__pic">
+                <img :src="item.image" :alt="item.title">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- 포트폴리오 섹션 (간략 소개 & 전용 페이지로 이동) -->
-    <!-- Contact 섹션 (이메일) -->
+    <!-- TODO: 포트폴리오 섹션 (간략 소개 & 전용 페이지로 이동) -->
+    <!-- <section class="section-box section-5"></section> -->
+
+    <!-- TODO: Contact 섹션 (이메일) -->
+    <!-- <section class="section-box section-6">
+      <div class="container">
+        <h1 class="section-title">Let's Talk</h1>
+        <div>
+
+        </div>
+      </div>
+    </section> -->
   </div>
 </template>
 
@@ -114,6 +135,41 @@
       return {
         flag: {
           logoMin: false
+        },
+        presentations: [
+          {
+            title: 'AWS Summit Seoul 2018',
+            image: '/img/presentation-1.jpg'
+          },
+          {
+            title: 'AWSKRUG Serverless 소모임',
+            image: '/img/presentation-2.jpg'
+          },
+          {
+            title: '클라우드 세미나 (NDS & AWS)',
+            image: '/img/presentation-3.jpg'
+          }
+        ],
+        swiperOption: {
+          loop: false,
+          slidesPerView: 3,
+          centeredSlides: false,
+          spaceBetween: 40,
+          breakpoints: {
+            // when window width is <= 992px
+            992: {
+              slidesPerView: 2.2,
+              spaceBetween: 35
+            },
+            768: {
+              slidesPerView: 1.7,
+              spaceBetween: 30
+            },
+            480: {
+              slidesPerView: 1.2,
+              spaceBetween: 25
+            }
+          }
         }
       }
     }

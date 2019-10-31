@@ -182,5 +182,19 @@ body {
         font-weight: 600;
       }
     }
+
+    .presentation-box {
+      .pb__title {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .pb__pic {
+        > img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
   }
 }

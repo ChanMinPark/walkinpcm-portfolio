@@ -41,11 +41,13 @@ export default {
   ** Global CSS
   */
   css: [
+    'swiper/dist/css/swiper.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~/plugins/vue-awesome-swiper.js', ssr: false }
   ],
   /*
   ** Nuxt.js modules
