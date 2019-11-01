@@ -5,11 +5,11 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'walkinpcm',
+    title: '박찬민의 웹사이트',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
+      { hid: 'description', name: 'description', content: '박찬민의 웹사이트입니다. 개발자로서의 저에 대해 소개하고 있습니다. ' },
       { name: 'msapplication-TileColor', content: '#1A1A1A' },
       { name: 'msapplication-TileImage', content: '/ms-icon-144x144.png' },
       { name: 'theme-color', content: '#1A1A1A' }
