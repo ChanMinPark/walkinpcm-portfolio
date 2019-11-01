@@ -141,6 +141,16 @@ body {
     }
   }
 
+  .section-hashtag {
+    .tag-list {
+      > ul {
+        > li {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
   .section-2 {
   }
 

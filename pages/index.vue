@@ -32,6 +32,25 @@
       </div>
     </section>
 
+    <section class="section-box section-hashtag">
+      <div class="container">
+        <h1 class="section-title">Hash Tags</h1>
+        <div class="tag-list">
+          <ul class="list-unstyled d-flex flex-wrap">
+            <li>#Developer</li>
+            <li>#FrontEnd</li>
+            <li>#HTML</li>
+            <li>#CSS</li>
+            <li>#Javascript</li>
+            <li>#Vue.js</li>
+            <li>#AWS</li>
+            <li>#Serverless</li>
+            <li>#LikeCommunity</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <!-- 기술 스택 섹션 -->
     <section class="section-box section-2">
       <div class="container">
