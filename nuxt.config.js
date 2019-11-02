@@ -9,12 +9,36 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '박찬민의 웹사이트입니다. 개발자로서의 저에 대해 소개하고 있습니다. ' },
-      { name: 'msapplication-TileColor', content: '#1A1A1A' },
-      { name: 'msapplication-TileImage', content: '/ms-icon-144x144.png' },
-      { name: 'theme-color', content: '#1A1A1A' }
+      { hid: 'description', name: 'description', content: '박찬민의 웹사이트입니다. 개발자로서의 저에 대해 소개하고 있습니다.' },
+      { name: 'subject', content: '박찬민의 웹사이트' },
+      { name: 'keywords', content: 'ChanMin Park, walkinpcm, pcm, developer, web, front-end, portfolio, 박찬민, 개발자, 웹프론트엔드, 프론트엔드, 포트폴리오' },
+      { name: 'copyright', content: '© 2019. walkinpcm. All Rights Reserved.' },
+
+      { name: 'theme-color', content: '#1A1A1A' },
+
+      { name: 'robots', content: 'index,follow' },
+      { name: 'googlebot', content: 'index,follow' },
+
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'walkinpcm.com' },
+      { property: 'og:site_name', content: '박찬민의 웹사이트' },
+      { property: 'og:title', content: '박찬민의 웹사이트' },
+      { property: 'og:description', content: '박찬민의 웹사이트입니다. 개발자로서의 저에 대해 소개하고 있습니다.' },
+      { property: 'og:image', content: '/og.jpg' },
+      { property: 'og:image:type', content: 'image/jpeg' },
+      { property: 'og:image:width', content: '600' },
+      { property: 'og:image:height', content: '315' },
+
+      { name: 'twitter:card', content: 'summary' },
+      { name: 'twitter:url', content: 'walkinpcm.com' },
+      { name: 'twitter:site', content: '박찬민의 웹사이트' },
+      { name: 'twitter:title', content: '박찬민의 웹사이트' },
+      { name: 'twitter:description', content: '박찬민의 웹사이트입니다. 개발자로서의 저에 대해 소개하고 있습니다.' },
+      { name: 'twitter:image', content: '/og.jpg' },
+      { name: 'twitter:domain', content: 'walkinpcm.com' },
     ],
     link: [
+      /* Favicon */
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'apple-touch-icon', sizes: '57x57', href: '/apple-icon-57x57.png' },
       { rel: 'apple-touch-icon', sizes: '60x60', href: '/apple-icon-60x60.png' },
