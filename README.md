@@ -1,22 +1,9 @@
 # walkinpcm-portfolio
 
-> The portfolio project of walkinpcm(ChanMin Park)
+> The personal website project of walkinpcm(ChanMin Park)
 
-## Build Setup
-
-``` bash
-# install dependencies
-$ npm run install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+# TODO
+- pre-render 빌드  
+- 스크롤 애니메이션  
+- BG 아이콘 추가  
+- 포트폴리오 섹션 추가  
