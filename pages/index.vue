@@ -3,7 +3,6 @@
     <!-- 로고 -->
     <section class="nav-logo">
       <div>
-        <!-- TODO: 스크롤 내리면 축소형 로고로 변하게 하기. -->
         <PCMLogo :isMin="flag.logoMin" />
       </div>
     </section>
@@ -13,12 +12,16 @@
       <div class="container">
         <div class="content">
           <h1 class="introduction">
-            <span class="intro-hello">Hello <span class="smile">:)</span></span><br>
-            I am<br>
-            <span class="intro-name">ChanMin Park.</span>
+            <div class="text-fadeup" :class="{ 'show': flag.coverLoading1 }">
+              <span class="intro-hello">Hello <span class="smile">:)</span></span>
+            </div>
+            <div class="text-fadeup" :class="{ 'show': flag.coverLoading2 }">
+              I am<br>
+              <span class="intro-name">ChanMin Park.</span>
+            </div>
           </h1>
 
-          <h2 class="description">
+          <h2 class="description text-fadeup" :class="{ 'show': flag.coverLoading3 }">
             Front-end Developer
           </h2>
         </div>
@@ -69,6 +72,13 @@
           하지만 AWS Serverless Service들은 Back-end 기술을 몰라도 쉽게 비용 효율적이면서 고가용성인 Back-end를 구축할 수 있게 해주기 때문에 큰 매력을 느끼고 있습니다.
         </p>
       </div>
+
+      <div class="roundsquare-wrapper-1">
+        <TheRoundSquare size="lg" />
+      </div>
+      <div class="roundsquare-wrapper-2">
+        <TheRoundSquare size="md" />
+      </div>
     </section>
 
     <!-- 블로그, 링크드인, 깃허브 섹션 -->
@@ -93,6 +103,10 @@
           </li>
         </ul>
       </div>
+
+      <div class="roundsquare-wrapper-1">
+        <TheRoundSquare size="md" />
+      </div>
     </section>
 
     <!-- 발표 소개 섹션 -->
@@ -105,7 +119,6 @@
           덕분에 저는 많은 개발 커뮤니티에 참석하면서 많은 지식들을 배울 수 있었습니다.
         </p>
         <p>
-          <!-- TODO: span의 before로 스타일 준 것의 버그 픽스 해야함.(줄이 넘어갈 때의 이슈) -->
           정기적으로 참석하는 커뮤니티로는 <span class="text-highlight text-awskrug"><a href="https://www.facebook.com/groups/awskrug" target="_blank">AWSKRUG Serverless 소모임</a></span>이 있습니다. 소모임에서는 서로의 실무 경험이나 학습 내용을 공유하는 자리를 달마다 가지고 있습니다.<br>
           이런 자리는 스스로를 자극시키는 좋은 원동력이 됩니다.
         </p>
@@ -153,7 +166,10 @@
     data () {
       return {
         flag: {
-          logoMin: false
+          logoMin: false,
+          coverLoading1: false,
+          coverLoading2: false,
+          coverLoading3: false
         },
         presentations: [
           {
@@ -190,6 +206,29 @@
             }
           }
         }
+      }
+    },
+    mounted () {
+      // 커버 섹션의 트랜지션 효과를 위한 flag 설정
+      setTimeout(() => {
+        this.flag.coverLoading1 = true
+      }, 500)
+      setTimeout(() => {
+        this.flag.coverLoading2 = true
+      }, 1800)
+      setTimeout(() => {
+        this.flag.coverLoading3 = true
+      }, 2700)
+
+      // 스크롤 내리면 작은 로고로 바뀌귀 위한 flag 설정
+      if (window) {
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 50) {
+            this.flag.logoMin = true
+          } else if (window.scrollY === 0) {
+            this.flag.logoMin = false
+          }
+        })
       }
     }
   }
