@@ -65,6 +65,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '~assets/scss/index.scss',
     'swiper/dist/css/swiper.css'
   ],
   /*
@@ -77,10 +78,14 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-analytics',
+    '@nuxtjs/style-resources'
   ],
   googleAnalytics: {
     id: 'UA-87247322-2'
+  },
+  styleResources: {
+    scss: ['./assets/scss/variables.scss']
   },
   /*
   ** Build configuration
