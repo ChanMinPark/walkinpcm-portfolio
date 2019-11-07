@@ -1,11 +1,5 @@
 <template>
   <div id="index">
-    <!-- 로고 -->
-    <section class="nav-logo">
-      <div>
-        <PCMLogo :isMin="flag.logoMin" />
-      </div>
-    </section>
     
     <!-- 커버 섹션 -->
     <section class="section-box section-1">
@@ -155,18 +149,15 @@
 </template>
 
 <script>
-  import PCMLogo from '~/components/PCMLogo'
   import TheRoundSquare from '~/components/TheRoundSquare'
 
   export default {
     components: {
-      PCMLogo,
       TheRoundSquare
     },
     data () {
       return {
         flag: {
-          logoMin: false,
           coverLoading1: false,
           coverLoading2: false,
           coverLoading3: false
@@ -219,17 +210,6 @@
       setTimeout(() => {
         this.flag.coverLoading3 = true
       }, 2700)
-
-      // 스크롤 내리면 작은 로고로 바뀌귀 위한 flag 설정
-      if (window) {
-        window.addEventListener('scroll', () => {
-          if (window.scrollY > 50) {
-            this.flag.logoMin = true
-          } else if (window.scrollY === 0) {
-            this.flag.logoMin = false
-          }
-        })
-      }
     }
   }
 </script>
