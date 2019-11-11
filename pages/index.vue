@@ -134,7 +134,15 @@
     </section>
 
     <!-- TODO: 포트폴리오 섹션 (간략 소개 & 전용 페이지로 이동) -->
-    <!-- <section class="section-box section-5"></section> -->
+    <section class="section-box section-5">
+      <div class="container">
+        <h1 class="section-title">Portfolio</h1>
+        <p>참여했던 프로젝트들을 소개합니다 !</p>
+        <div>
+          <!-- TODO: 이미지 추가. ㅁㅁㅁㅁㅁ 모양 -->
+        </div>
+      </div>
+    </section>
 
     <!-- TODO: Contact 섹션 (이메일) -->
     <!-- <section class="section-box section-6">
