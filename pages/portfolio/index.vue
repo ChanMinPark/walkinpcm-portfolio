@@ -23,8 +23,8 @@
             <div v-if="item.remark !== ''" class="pt-1">- 비고: {{ item.remark }}</div>
             <!-- link -->
             <div class="text-box__link">
-              <!-- <a :href="item.link" target="_blank">사이트로 이동 ></a> -->
-              <a :href="item.link" target="_blank">{{ item.link }}</a>
+              <a :href="item.link" target="_blank">사이트로 이동 ></a>
+              <!-- <a :href="item.link" target="_blank">{{ item.link }}</a> -->
             </div>
           </div>
 
