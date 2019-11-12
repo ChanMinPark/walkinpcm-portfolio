@@ -194,6 +194,11 @@
   }
   
   .section-5 {
-    
+    .portfolio-cover {
+      > a > img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 }

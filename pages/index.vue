@@ -137,9 +137,14 @@
     <section class="section-box section-5">
       <div class="container">
         <h1 class="section-title">Portfolio</h1>
-        <p>참여했던 프로젝트들을 소개합니다 !</p>
-        <div>
-          <!-- TODO: 이미지 추가. ㅁㅁㅁㅁㅁ 모양 -->
+        <p>
+          참여했던 프로젝트들을 소개합니다 !<br>
+          아래 이미지를 눌러주세요~
+        </p>
+        <div class="portfolio-cover">
+          <nuxt-link :to="{ name: 'portfolio' }">
+            <img src="/img/portfolio-cover.png" alt="Move to portfolio page.">
+          </nuxt-link>
         </div>
       </div>
     </section>
