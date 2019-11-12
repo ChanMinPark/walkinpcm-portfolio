@@ -17,8 +17,9 @@ body {
   color: #fff;
 }
 
-.page-enter-active, .page-leave-active {
-  transition: opacity .5s
+// .page-enter-active, .page-leave-active {
+.page-enter-active {
+  transition: opacity 1s
 }
 .page-enter, .page-leave-active {
   opacity: 0
