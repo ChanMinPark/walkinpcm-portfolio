@@ -133,7 +133,6 @@
       </div>
     </section>
 
-    <!-- TODO: 포트폴리오 섹션 (간략 소개 & 전용 페이지로 이동) -->
     <section class="section-box section-5">
       <div class="container">
         <h1 class="section-title">Portfolio</h1>
@@ -161,10 +160,11 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+  import Vue from 'vue'
   import TheRoundSquare from '~/components/TheRoundSquare'
 
-  export default {
+  export default Vue.extend ({
     components: {
       TheRoundSquare
     },
@@ -224,7 +224,7 @@
         this.flag.coverLoading3 = true
       }, 2700)
     }
-  }
+  })
 </script>
 
 <style lang="scss" src="./index.scss">
