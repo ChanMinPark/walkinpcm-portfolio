@@ -10,17 +10,17 @@ phases:
   # 빌드 전에 수행할 명령을 입력합니다.
   pre_build:
     commands:
-      - echo Buile Phase :: pre_build phase...
+      - echo Buile Phase >> pre_build phase...
   # 빌드를 수행할 명령을 입력합니다.
   build:
     commands:
-      - echo Buile Phase :: Build started on `date`
+      - echo Buile Phase >> Build started on `date`
       - npm install
       - npm run generate
   # 빌드 후에 수행할 명령을 입력합니다.
   post_build:
     commands:
-      - echo Buile Phase :: Build completed on `date`
+      - echo Buile Phase >> Build completed on `date`
 # 빌드 결과물로 나온 아티팩트에 대한 정보를 제공합니다.
 artifacts:
   # 빌드 환경에서 빌드 출력 결과물이 생성되는 위치를 나타냅니다.
