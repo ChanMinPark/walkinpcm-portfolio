@@ -1,4 +1,4 @@
-![Build Status](https://codebuild.ap-northeast-2.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoid0NkMVJMVkErUjg2QXlEb2xvd0JNc3FwNERSMDVQU3l5VjVsaUdlRmhUUXB1algwRXBLTnRsSEx1bm9QanVLdHBFUUdzVXhZcnFrR1FIWGRLY2twK3NrPSIsIml2UGFyYW1ldGVyU3BlYyI6IjNvTnd4bmNvZlQ4WG5naDciLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)  
+![](https://codebuild.ap-northeast-2.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoid0NkMVJMVkErUjg2QXlEb2xvd0JNc3FwNERSMDVQU3l5VjVsaUdlRmhUUXB1algwRXBLTnRsSEx1bm9QanVLdHBFUUdzVXhZcnFrR1FIWGRLY2twK3NrPSIsIml2UGFyYW1ldGVyU3BlYyI6IjNvTnd4bmNvZlQ4WG5naDciLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=release)  
 
 # walkinpcm-portfolio
 
