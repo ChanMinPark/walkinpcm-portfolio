@@ -49,7 +49,7 @@
             name: 'A+E Networks',
             description: `글로벌 미디어 회사인 A+E Networks를 소개하고, 채널 및 프로그램을 안내합니다.`,
             link: 'http://www.aenetworks.co.kr',
-            image: '/img/portfolio__A+E.png',
+            image: '/img/portfolio__AE.png',
             role: '퍼블리싱 및 프론트 엔드',
             tech: 'HTML, CSS, Javascript, Nuxt.js(Vue.js)',
             remark: '패밀리 사이트인 ‘History Korea’, ‘Lifetime Korea’, ‘Blog’ 사이트 모두 개발'
