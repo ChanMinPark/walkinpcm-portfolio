@@ -11,16 +11,16 @@
     "generate": "nuxt-ts generate"
   },
   "dependencies": {
-    "@nuxt/typescript-runtime": "0.2.4",
-    "@nuxtjs/google-analytics": "2.2.1",
+    "@nuxt/typescript-runtime": "0.4.6",
+    "@nuxtjs/google-analytics": "2.2.3",
     "@nuxtjs/style-resources": "1.0.0",
-    "nuxt": "2.8.1",
-    "vue-awesome-swiper": "3.1.3"
+    "nuxt": "2.12.2",
+    "vue-awesome-swiper": "4.1.1"
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "^0.3.4",
-    "node-sass": "^4.13.0",
-    "nodemon": "^1.18.9",
-    "sass-loader": "^8.0.0"
+    "@nuxt/typescript-build": "^0.6.6",
+    "node-sass": "^4.14.0",
+    "nodemon": "^2.0.3",
+    "sass-loader": "^8.0.2"
   }
 }
