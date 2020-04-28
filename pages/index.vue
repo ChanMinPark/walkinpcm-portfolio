@@ -162,7 +162,7 @@
 
 <script lang="ts">
   import Vue from 'vue'
-  import TheRoundSquare from '~/components/TheRoundSquare'
+  import TheRoundSquare from '~/components/TheRoundSquare/index.vue'
 
   export default Vue.extend ({
     components: {
