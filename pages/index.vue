@@ -82,7 +82,7 @@
         <ul class="list-unstyled row links-list">
           <li class="col-4">
             <div class="icon-box">
-              <a href="https://walkinpcm.blogspot.com" target="_blank"><img src="~assets/img/icon/blogger.svg" alt="Blog"></a>
+              <a href="https://blog.walkinpcm.com" target="_blank"><img src="~assets/img/icon/blogger.svg" alt="Blog"></a>
             </div>
           </li>
           <li class="col-4">
