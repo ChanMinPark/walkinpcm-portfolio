@@ -1,3 +1,5 @@
+// bundle chunk 이름에 사용할 timestamp 정보
+const timestampNow = Date.now()
 
 export default {
   // mode: 'spa',
@@ -95,6 +97,11 @@ export default {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
+    },
+    // 번들파일 이름 재정의
+    filenames: {
+      app: ({ isDev }) => isDev ? '[name].js' : `${timestampNow}.[contenthash].js`,
+      chunk: ({ isDev }) => isDev ? '[name].js' : `${timestampNow}.[contenthash].js`
     }
   },
   buildModules: ['@nuxt/typescript-build']
