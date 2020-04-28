@@ -66,13 +66,13 @@ export default {
   */
   css: [
     '~assets/scss/index.scss',
-    'swiper/dist/css/swiper.css'
+    'swiper/css/swiper.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~/plugins/vue-awesome-swiper.js', ssr: false }
+    { src: '~/plugins/vue-awesome-swiper.js', mode: 'client' }
   ],
   /*
   ** Nuxt.js modules
