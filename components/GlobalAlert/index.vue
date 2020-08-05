@@ -107,13 +107,5 @@ export default {
     box-shadow: 2px 2px 5px #999;
     border-radius: 4px;
   }
-
-  &+.comp-global-alert {
-    .cga__alert-box {
-      // top: 20px;
-      // left: 20px;
-      transform: translate(40px, 40px);
-    }
-  }
 }
 </style>
