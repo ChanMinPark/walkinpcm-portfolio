@@ -40,7 +40,8 @@
             <li>#CSS</li>
             <li>#Javascript</li>
             <li>#Typescript</li>
-            <li>#Vue.js</li>
+            <li>#React</li>
+            <li>#Vue</li>
             <li>#AWS</li>
             <li>#Serverless</li>
             <li>#LikeCommunity</li>
