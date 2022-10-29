@@ -39,6 +39,7 @@
             <li>#HTML</li>
             <li>#CSS</li>
             <li>#Javascript</li>
+            <li>#Typescript</li>
             <li>#React</li>
             <li>#Vue</li>
             <li>#AWS</li>
