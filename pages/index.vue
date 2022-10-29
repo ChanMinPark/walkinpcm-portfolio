@@ -39,7 +39,8 @@
             <li>#HTML</li>
             <li>#CSS</li>
             <li>#Javascript</li>
-            <li>#Vue.js</li>
+            <li>#React</li>
+            <li>#Vue</li>
             <li>#AWS</li>
             <li>#Serverless</li>
             <li>#LikeCommunity</li>
